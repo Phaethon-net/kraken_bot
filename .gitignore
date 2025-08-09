@@ -1,0 +1,9 @@
+.env
+__pycache__/
+*.pyc
+logs/
+reports/*.png
+bot/trades.sqlite
+.env.*
+.vscode/
+*.log

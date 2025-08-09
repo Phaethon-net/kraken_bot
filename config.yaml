@@ -1,0 +1,33 @@
+exchange:
+  name: kraken
+  pair: BTC/USDT
+  timeframe_entry: 1m
+  timeframe_confirm: 5m
+  max_candles: 2000
+
+risk:
+  max_position_fraction: 0.10
+  sl_atr_mult: 1.5
+  tp_r1: 1.0
+  tp_r2: 2.5
+  daily_max_loss_r: -2.0
+
+strategy:
+  use_momentum: true
+  use_mean_reversion: true
+  donchian_lookback: 20
+  ema_fast: 20
+  ema_slow: 50
+  rsi_length: 14
+  bb_length: 20
+  bb_std: 2.0
+  zscore_lookback: 20
+  cooldown_minutes: 10
+
+storage:
+  db_path: ./bot/trades.sqlite
+  csv_dir: ./logs
+
+reporting:
+  reports_dir: ./reports
+  timezone: UTC
