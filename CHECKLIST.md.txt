@@ -1,0 +1,68 @@
+# CryptoBot Project Checklist
+
+A living checklist for building and running the autonomous Kraken-based crypto trading bot with a secure web dashboard.
+
+---
+
+## Phase 1 – Foundations ?
+- [x] Choose exchange ? Kraken (Binance UK paused)
+- [x] Recover account & begin KYC (verification pending)
+- [x] Dedicated server setup (Windows Server 2016, IIS10)
+- [x] Install Python 3.11
+- [x] Install Git, connect to GitHub repo
+- [x] Deploy trading bot skeleton in `C:\kraken_bot`
+- [x] Run bot in paper mode for testing
+
+---
+
+## Phase 2 – Web Dashboard
+- [x] Design HTML/JS dashboard (Chart.js + PapaParse)
+- [x] Link dashboard to bot CSV logs via IIS
+- [x] Fix 404 & permission issues (NTFS + app pool read access)
+- [x] Secure `/cryptobot` with Basic Auth + SSL
+- [ ] Add `balances.csv` logging (waiting for Kraken API keys)
+- [ ] Enhance dashboard:
+  - [ ] Line chart for **total value over time**
+  - [ ] Pie chart for **holdings breakdown**
+  - [ ] Table view for **balances snapshots**
+
+---
+
+## Phase 3 – Bot Live Trading
+- [ ] Complete Kraken KYC ? once verified
+- [ ] Generate API keys (Trade + Query Info, no withdrawal)
+- [ ] Test bot live with tiny position (5–10% of 0.02 BTC)
+- [ ] Enable balances logging
+- [ ] Tweak strategy parameters
+
+---
+
+## Phase 4 – Data & Strategy Enhancements
+- [ ] Add USD conversion to balances logger
+- [ ] Backtest historical data
+- [ ] Consider hybrid strategies
+- [ ] Integrate stop-loss / take-profit rules
+
+---
+
+## Phase 5 – Automation & Quality of Life
+- [ ] Auto-start bot & balances logger on reboot
+- [ ] Daily backup of logs/configs to GitHub (private)
+- [ ] Add email/Telegram alerts
+- [ ] Optional: HTTP?HTTPS redirect
+
+---
+
+## Phase 6 – Scaling & Advanced
+- [ ] Increase position size gradually
+- [ ] Consider paid tools if ROI is clear
+- [ ] Multi-exchange support
+- [ ] Portfolio diversification
+- [ ] Tax-ready export scripts (UK CGT compliance)
+
+---
+
+**Legend:**  
+? = done  
+? = in progress  
+? = not started  
