@@ -2,6 +2,8 @@
 __pycache__/
 *.pyc
 logs/
+!/logs/*.csv
+logs/archive/
 reports/*.png
 bot/trades.sqlite
 .env.*
